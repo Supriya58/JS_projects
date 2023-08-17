@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+img {
+  border-radius: 10px;
+  height: 400px;
+  width: 600px;
+}
+
+#upvote {
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  background-color: green;
+}
+
+#votes {
+  font-weight: bold;
+  font-size: 25px;
+}
+#downvote {
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+
+  background-color: red;
+}
