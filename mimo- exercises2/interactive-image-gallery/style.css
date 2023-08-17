@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+#thumbnailList img {
+  width: 15%;
+  height: auto;
+}
+
+#mainImage {
+  width: 50%;
+  height: auto;
+}
+
+.border {
+  border: 2px solid pink;
+}
