@@ -21,10 +21,14 @@ function createTodo() {
   //reset input
   document.getElementById("note").value = "";
 }
-
+//delete individual todo
 function deleteTodo(event, listItem) {
   const todosContainerElement = document.getElementById("todos-container");
   todosContainerElement.removeChild(listItem);
+}
+//delete all todos
+function deleteTodos() {
+  document.getElementById("todos-container").innerHTML = "";
 }
 
 function todoCheck(event, listItem) {
