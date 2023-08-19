@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AllN1 Domestic Services</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1>AllN1 Domestic Services</h1>
+        <p>
+          Welcome to our site! Use the buttons below to choose which home
+          services you want to know more about. When the services appear, add
+          them to your list and we will be happy to arrange an estimate for you.
+        </p>
+      </div>
+      <div class="topButtons">
+        <button id="allButton">All</button>
+        <button id="insideButton">Inside</button>
+        <button id="outsideButton">Outside</button>
+      </div>
+      <div id="banner">
+        <img src="https://mimo.app/i/living-room-hostel.png" />
+      </div>
+      <div class="servicesContainer">
+        <div class="servicesItem outsideServices hide" id="lawn">
+          <img
+            src="https://mimo.app/i/colorful-flowers.png"
+            width="250"
+            id="lawnPhoto"
+          />
+          <div>
+            <h4>Lawn and Garden</h4>
+            <button id="lawnButton">Add</button>
+          </div>
+        </div>
+        <div class="servicesItem insideServices hide">
+          <img
+            src="https://mimo.app/i/cleaning.png"
+            width="250"
+            id="cleaningPhoto"
+          />
+          <h4>Cleaning</h4>
+          <button id="cleaningButton">Add</button>
+        </div>
+      </div>
+      <div class="estimatesBanner">
+        <h3 class="hide">Estimates Requested</h3>
+        <button class="hide" id="clearEstimateButton">Clear Estimates</button>
+      </div>
+      <ul>
+        <li id="lawnEstimate" class="hide">Lawn and Garden</li>
+        <li class="hide cleaningEstimate">Cleaning</li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
