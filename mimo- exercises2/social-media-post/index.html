@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="body">
+    <h1>friendsbook.</h1>
+    <div id="input">
+      <textarea
+        type="text"
+        placeholder="What's on your mind today?"
+        id="inputPost"
+      ></textarea>
+      <button id="addBtn" onclick="addPost()">Add</button>
+    </div>
+    <div id="notification">
+      <p>Your friend, Harry, just shared a post!</p>
+      <button onclick="remove()">Remove alert</button>
+    </div>
+    <div id="new">
+      <b><span id="count">1</span></b> post(s)!
+    </div>
+    <div class="post">
+      <p>
+        You wanna see why DOM manipulation and Dynamic webpages is interesting?
+        Let me tell you a trick. This trick will work on any website. Open the
+        console tab. Type "<b>document.body.contentEditable = 'true';</b>".
+        Voila! You can now edit the webpage text that you are in!
+      </p>
+      <button>Like</button>
+      <button>Comment</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
