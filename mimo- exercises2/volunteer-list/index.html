@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3 id="title">Volunteer Sign Ups</h3>
+    <div id="daysOfWeek">
+      <div id="mon">
+        <h5>Monday</h5>
+        <ul>
+          <li>open</li>
+          <li>open</li>
+        </ul>
+      </div>
+      <div id="tues">
+        <h5>Tuesday</h5>
+        <ul>
+          <li>open</li>
+          <li>open</li>
+        </ul>
+      </div>
+      <div id="weds">
+        <h5>Wednesday</h5>
+        <ul>
+          <li>open</li>
+          <li>open</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p>Enter your name and choose a day below:</p>
+      <input type="text" placeholder="name" id="name" />
+      <select id="day">
+        <option value="0">Mon</option>
+        <option value="1">Tues</option>
+        <option value="2">Wed</option>
+      </select>
+      <button
+        id="add"
+        onclick="addVolunteer(document.getElementById('day').value, document.getElementById('name').value)"
+      >
+        +
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

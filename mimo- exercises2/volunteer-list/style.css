@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  background-color: white;
+  padding-top: 10%;
+  margin-left: 10%;
+}
+
+h3,
+h4 {
+  text-align: left;
+  margin-left: 10%;
+}
+
+#name,
+#ADD {
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+select {
+  height: 26px;
+}
+
+.error {
+  border: 2px solid red;
+}
