@@ -1,0 +1,15 @@
+body {
+  background-color: #3e416d;
+  color: whitesmoke;
+  font-family: "Lato", sans-serif;
+}
+
+#terms {
+  background-color: whitesmoke;
+  color: black;
+  height: 150px;
+  width: 700px;
+  overflow: scroll;
+  padding: 10px;
+  border-radius: 8px;
+}

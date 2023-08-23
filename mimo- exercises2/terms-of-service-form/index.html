@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Employee Information</h1>
+      <h4 id="employment-status">Please select employment status:</h4>
+      <select onchange="getValue()" id="select-value">
+        <option value="">select</option>
+        <option value="FT">FT</option>
+        <option value="PT">PT</option>
+        <option value="temporary">temporary</option>
+        <option value="seasonal">seasonal</option>
+      </select>
+      <h4 id="first-name">Enter first name:</h4>
+      <form oninput="getFirstName(event)">
+        <input type="text" name="firstname" />
+      </form>
+      <h4 id="last-name">Enter last name:</h4>
+      <form oninput="getLastName(event)">
+        <input type="text" name="lastname" />
+      </form>
+      <h4 id="question">Have you worked here before?</h4>
+      <form onclick="getCheckValue()">
+        <input type="checkbox" name="yes" value="yes" />
+        <label>yes</label>
+        <input type="checkbox" name="no" value="no" />
+        <label>no</label>
+      </form>
+      <h2 id="terms-header">Terms of Agreement</h2>
+      <p id="terms" onscroll="completeTerms()">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Aliquet nec
+        ullamcorper sit amet risus nullam eget felis. Netus et malesuada fames
+        ac turpis. In hac habitasse platea dictumst quisque. Amet consectetur
+        adipiscing elit duis tristique sollicitudin nibh sit amet. Amet nisl
+        purus in mollis nunc sed id semper risus. Sem viverra aliquet eget sit
+        amet. Magna fringilla urna porttitor rhoncus dolor purus. Quisque
+        egestas diam in arcu cursus euismod. Neque gravida in fermentum et. In
+        iaculis nunc sed augue lacus viverra vitae. Pellentesque dignissim enim
+        sit amet. Quam pellentesque nec nam aliquam sem et. Tristique et egestas
+        quis ipsum. Elit ut aliquam purus sit amet luctus venenatis. Euismod
+        lacinia at quis risus sed vulputate odio. Rhoncus aenean vel elit
+        scelerisque mauris pellentesque pulvinar pellentesque. Velit aliquet
+        sagittis id consectetur purus ut. Integer eget aliquet nibh praesent
+        tristique magna sit amet. Adipiscing enim eu turpis egestas pretium
+        aenean pharetra. Nibh nisl condimentum id venenatis. Diam quam nulla
+        porttitor massa id neque aliquam. Amet consectetur adipiscing elit duis
+        tristique sollicitudin nibh sit amet. Fames ac turpis egestas maecenas
+        pharetra convallis posuere. A diam maecenas sed enim ut. Pharetra et
+        ultrices neque ornare. Eu non diam phasellus vestibulum lorem sed.
+        Ultrices gravida dictum fusce ut placerat. Sagittis aliquam malesuada
+        bibendum arcu vitae elementum curabitur. Nunc lobortis mattis aliquam
+        faucibus purus in massa tempor nec. Nunc pulvinar sapien et ligula
+        ullamcorper malesuada proin. Aliquet nibh praesent tristique magna sit
+        amet. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Nam
+        aliquam sem et tortor consequat. Scelerisque purus semper eget duis at
+        tellus at urna. Et malesuada fames ac turpis. Cursus risus at ultrices
+        mi tempus imperdiet nulla malesuada. Posuere lorem ipsum dolor sit amet.
+        Viverra nibh cras pulvinar mattis. Arcu bibendum at varius vel pharetra
+        vel turpis. Morbi tincidunt augue interdum velit. Vitae proin sagittis
+        nisl rhoncus mattis rhoncus urna neque. Quisque id diam vel quam
+        elementum. Ut consequat semper viverra nam libero justo laoreet sit
+        amet. Leo vel fringilla est ullamcorper eget. Morbi leo urna molestie at
+        elementum. Vitae suscipit tellus mauris a diam maecenas sed enim. Mi sit
+        amet mauris commodo quis imperdiet massa tincidunt.
+      </p>
+      <h5>
+        Double-clicking submits and confirms that the information above is true
+        and accurate to the best of your knowledge
+      </h5>
+      <button ondblclick="submit()">Submit</button>
+      <p id="notification"></p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
