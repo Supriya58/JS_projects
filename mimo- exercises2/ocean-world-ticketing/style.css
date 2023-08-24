@@ -1,0 +1,84 @@
+body {
+  background-color: aquamarine;
+  overflow: scroll;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.white {
+  color: white;
+}
+.heading {
+  color: blue;
+}
+
+#ocean {
+  background-color: aquamarine;
+  height: 1200px;
+  text-align: center;
+}
+
+h1 {
+  margin: 50px;
+  padding: 10px;
+  color: whitesmoke;
+  font-size: 100px;
+}
+
+#show {
+  font-size: 50px;
+  color: darkturquoise;
+}
+
+p {
+  color: whitesmoke;
+}
+
+#info {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 20px;
+  color: darkslategray !important;
+  visibility: hidden;
+}
+
+#form {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 20px;
+  color: darkslategray !important;
+  visibility: hidden;
+}
+
+button {
+  color: whitesmoke;
+  background-color: darkturquoise;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#whale {
+  width: 20%;
+  transform: rotate(-10deg);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#octopus {
+  width: 20%;
+  transform: rotate(10deg);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#jellyfish {
+  width: 10%;
+  transform: rotate(60deg);
+}
+
+.crabfish {
+  width: 10%;
+}

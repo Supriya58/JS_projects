@@ -62,5 +62,5 @@ function submit() {
   notification.innerHTML =
     "Your submission is complete, you may now close the browser.";
   notification.style.color = "#62d76b";
-  console.log(notification);
+  
 }
