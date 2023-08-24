@@ -42,25 +42,29 @@ function completeTerms() {
 }
 
 function submit() {
-  // if (selectBool && firstNameBool && lastNameBool && checkBool && termsBool) {
-  //   notification.innerHTML = "Error, none of the fields are filled up.";
-  //   notification.style.color = "ff0000";
-  //   console.log(notification);
-
-  //   // document.getElementById("select-value").style.color = "ff0000";
-  //   // document.getElementById("first-name").style.color = "ff0000";
-  //   // document.getElementById("last-name").style.color = "ff0000";
-  //   // document.getElementById("question").style.color = "ff0000";
-  //   // document.getElementById("terms-header").style.color = "ff0000";
-  // }
-  // if (selectBool || firstNameBool || lastNameBool || checkBool || termsBool) {
-  //   notification.innerHTML =
-  //     "Error!!Please fill up all the sections in your form.";
-  //   notification.style.color = "#ff0000";
-  //   console.log(notification);
-  // } else {}
-  notification.innerHTML =
-    "Your submission is complete, you may now close the browser.";
-  notification.style.color = "#62d76b";
-  
+  if (
+    !selectBool &&
+    !firstNameBool &&
+    !lastNameBool &&
+    !checkBool &&
+    !termsBool
+  ) {
+    notification.innerHTML = "Error, none of the fields are filled up.";
+    notification.style.color = "ff0000";
+    console.log(notification);
+  } else if (
+    !selectBool ||
+    !firstNameBool ||
+    !lastNameBool ||
+    !checkBool ||
+    !termsBool
+  ) {
+    notification.innerHTML =
+      "Error!!Please fill up all the sections in your form.";
+    notification.style.color = "#ff0000";
+  } else {
+    notification.innerHTML =
+      "Your submission is complete, you may now close the browser.";
+    notification.style.color = "#62d76b";
+  }
 }
