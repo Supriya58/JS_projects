@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:wght@700&display=swap");
+
+html,
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0e891;
+  overflow: hidden;
+}
+
+p {
+  color: grey;
+  font-size: 18px;
+  background-color: white;
+  overflow-wrap: break-word;
+}
